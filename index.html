@@ -13,11 +13,11 @@
           <img src="images/logonew.svg" alt="Logo" class="logo" />
         </div>
         <ul class="nav-menu">
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Active Employers</a></li>
-          <li><a href="#">Job Blogs</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#" class="btn-outline">Jobseeker Login</a></li>
+          <li><a href="#" class="nav-hover">Jobs</a></li>
+          <li><a href="#" class="nav-hover">Active Employers</a></li>
+          <li><a href="#" class="nav-hover">Job Blogs</a></li>
+          <li><a href="#" class="nav-hover">Pricing</a></li>
+          <li><a href="#" class="jobseeker">Jobseeker Login</a></li>
           <li><a href="#" class="btn-filled">Employer Login</a></li>
         </ul>
       </nav>
@@ -25,11 +25,14 @@
 
     <!-- Banner -->
     <section class="banner">
-      <h2>EMPLOYERS</h2>
-      <p>WELCOME OFFER - FREE JOB Postings and Much More.</p>
+      <div class="banner-left">
+
+        <h2>EMPLOYERS</h2>
+        <p>WELCOME OFFER - FREE JOB Postings and Much More.</p>
+      </div>
       <div class="banner-buttons">
         <button class="btn-filled">Register for FREE</button>
-        <button class="btn-outline">Post A Job</button>
+        <button class="btn-outline-2">Post A Job</button>
         <a href="#">Sales Enquiry</a>
       </div>
     </section>
@@ -42,13 +45,13 @@
     <!-- Search Section -->
     <section class="search-area">
       <div class="search-box">
-        <div>
-          <input type="text" placeholder="Search Jobs Now" />
-          <button class="btn-filled">Search</button>
+        <div class="input-container">
+          <input type="text" placeholder="Search Jobs Now" class="input" />
+          <button class="btn-filled-1">Search</button>
         </div>
-        <div>
+        <div class="view-btn">
           <button class="btn-outline">View Jobs</button>
-          <button class="btn-filled">Register For FREE</button>
+          <button class="btn-filled-2">Register For FREE</button>
         </div>
       </div>
       <div class="quick-search">
@@ -66,129 +69,111 @@
     </section>
 
     <!-- Featured Jobs -->
-    <section class="featured-jobs">
-      <h2 class="text-center text-2xl font-bold mb-4">Featured Jobs</h2>
+ <section class="featured-jobs max-w-7xl mx-auto">
+    <h2 class="text-center text-2xl font-bold mb-6">Featured Jobs</h2>
 
-      <div class="carousel-container">
-        <!-- Slide 1 -->
-        <div class="slide active">
-          <div class="job-card">
-            <span class="badge">In Office job</span>
-            <h3><a href="#">Azure Integration Developer (Python)</a></h3>
-            <p>Fusion Practices</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time - Permanent</li>
-              <li><i class="fa fa-clock"></i> 0 - 5 Years</li>
-              <li><i class="fa fa-map-marker"></i> Chennai / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">In Office job</span>
-            <h3><a href="#">Frontend Developer (React.js)</a></h3>
-            <p>Infosys</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 2 - 4 Years</li>
-              <li><i class="fa fa-map-marker"></i> Bengaluru / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">Remote job</span>
-            <h3><a href="#">Full Stack Developer (MERN)</a></h3>
-            <p>TCS Digital</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Contract</li>
-              <li><i class="fa fa-clock"></i> 3 - 6 Years</li>
-              <li><i class="fa fa-map-marker"></i> Remote</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">In Office job</span>
-            <h3><a href="#">Java Developer</a></h3>
-            <p>Wipro</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 1 - 3 Years</li>
-              <li><i class="fa fa-map-marker"></i> Pune / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">Hybrid job</span>
-            <h3><a href="#">Data Analyst</a></h3>
-            <p>Capgemini</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 0 - 2 Years</li>
-              <li><i class="fa fa-map-marker"></i> Mumbai / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <!-- Slide Set (Duplicated for infinite scroll) -->
+        <div class="job-card">
+          <span class="badge">In Office job</span>
+          <h3 class="font-semibold">Azure Integration Developer (Python)</h3>
+          <p>Fusion Practices</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time - Permanent</li>
+            <li>⏰ 0 - 5 Years</li>
+            <li>📍 Chennai / India</li>
+          </ul>
+          <button class="button">Apply</button>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="slide">
-          <div class="job-card">
-            <span class="badge">Remote job</span>
-            <h3><a href="#">Backend Developer (Node.js)</a></h3>
-            <p>Zoho</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 2 - 5 Years</li>
-              <li><i class="fa fa-map-marker"></i> Remote</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">In Office job</span>
-            <h3><a href="#">QA Engineer</a></h3>
-            <p>HCL Technologies</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 1 - 3 Years</li>
-              <li><i class="fa fa-map-marker"></i> Noida / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">Hybrid job</span>
-            <h3><a href="#">UI/UX Designer</a></h3>
-            <p>Cognizant</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 0 - 2 Years</li>
-              <li><i class="fa fa-map-marker"></i> Hyderabad / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
-
-          <div class="job-card">
-            <span class="badge">In Office job</span>
-            <h3><a href="#">DevOps Engineer</a></h3>
-            <p>LTIMindtree</p>
-            <ul>
-              <li><i class="fa fa-briefcase"></i> Full Time</li>
-              <li><i class="fa fa-clock"></i> 3 - 7 Years</li>
-              <li><i class="fa fa-map-marker"></i> Gurgaon / India</li>
-            </ul>
-            <button class="btn-apply">Apply➤</button>
-          </div>
+        <div class="job-card">
+          <span class="badge">In Office job</span>
+          <h3 class="font-semibold">Frontend Developer (React.js)</h3>
+          <p>Infosys</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time</li>
+            <li>⏰ 2 - 4 Years</li>
+            <li>📍 Bengaluru / India</li>
+          </ul>
+          <button class="button">Apply</button>
         </div>
 
-        <!-- Navigation Arrows -->
-        <button class="nav left">&#10094;</button>
-        <button class="nav right">&#10095;</button>
+        <div class="job-card">
+          <span class="badge">Remote job</span>
+          <h3 class="font-semibold">Full Stack Developer (MERN)</h3>
+          <p>TCS Digital</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Contract</li>
+            <li>⏰ 3 - 6 Years</li>
+            <li>📍 Remote</li>
+          </ul>
+          <button class="button">Apply</button>
+        </div>
+
+        <div class="job-card">
+          <span class="badge">In Office job</span>
+          <h3 class="font-semibold">Java Developer</h3>
+          <p>Wipro</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time</li>
+            <li>⏰ 1 - 3 Years</li>
+            <li>📍 Pune / India</li>
+          </ul>
+          <button class="button">Apply</button>
+        </div>
+
+        <div class="job-card">
+          <span class="badge">Hybrid job</span>
+          <h3 class="font-semibold">Data Analyst</h3>
+          <p>Capgemini</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time</li>
+            <li>⏰ 0 - 2 Years</li>
+            <li>📍 Mumbai / India</li>
+          </ul>
+          <button class="button">Apply</button>
+        </div>
+
+  
+        <div class="job-card">
+          <span class="badge">In Office job</span>
+          <h3 class="font-semibold">Azure Integration Developer (Python)</h3>
+          <p>Fusion Practices</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time - Permanent</li>
+            <li>⏰ 0 - 5 Years</li>
+            <li>📍 Chennai / India</li>
+          </ul>
+          <button class="button">Apply</button>
+        </div>
+
+        <div class="job-card">
+          <span class="badge">In Office job</span>
+          <h3 class="font-semibold">Frontend Developer (React.js)</h3>
+          <p>Infosys</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Full Time</li>
+            <li>⏰ 2 - 4 Years</li>
+            <li>📍 Bengaluru / India</li>
+          </ul>
+          <button class="button">Apply</button>
+        </div>
+
+        <div class="job-card">
+          <span class="badge">Remote job</span>
+          <h3 class="font-semibold">Full Stack Developer (MERN)</h3>
+          <p>TCS Digital</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>💼 Contract</li>
+            <li>⏰ 3 - 6 Years</li>
+            <li>📍 Remote</li>
+          </ul>
+        </div>
+        <button class="button">Apply</button>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Featured Employers -->
     <section class="featured-employers">
@@ -259,29 +244,41 @@
       </div>
     </section>
 
-    <section class="job-preference">
-      <div class="job-india">
-        <p>JOBS IN INDIA</p>
-        <div class="job-city">
-          <p>#Mumbai</p>
-          <p>#Delhi</p>
-          <p>#Ajmer</p>
-          <p>#Pune</p>
-          <p>#Hyderabad</p>
-          <p>#Agra</p>
-          <p>#Chennai</p>
-          <p>#Kolkata</p>
-          <p>#Indore</p>
-          <p>#Gurugram</p>
-          <p>#Jaipur</p>
-          <p>#Ahmedabad</p>
-        </div>
+      <section class="job-preference">
+    <div class="job-column">
+      <p class="title">JOBS IN INDIA</p>
+      <div class="job-tags">
+        <p>#Mumbai</p>
+        <p>#Delhi</p>
+        <p>#Ajmer</p>
+        <p>#Pune</p>
+        <p>#Hyderabad</p>
+        <p>#Agra</p>
+        <p>#Chennai</p>
+        <p>#Kolkata</p>
+        <p>#Indore</p>
+        <p>#Gurugram</p>
+        <p>#Jaipur</p>
+        <p>#Ahmedabad</p>
       </div>
-      <div class="job-international">
-        <p>INTERNATIONAL JOBS</p>
-      </div>
-    </section>
+    </div>
 
+    <div class="job-column">
+      <p class="title">INTERNATIONAL JOBS</p>
+      <div class="job-tags">
+        <p>#Africa</p>
+        <p>#USA</p>
+        <p>#UK</p>
+        <p>#Australia</p>
+        <p>#Canada</p>
+        <p>#Singapore</p>
+        <p>#Dubai</p>
+        <p>#Saudi Arabia</p>
+        <p>#New Zealand</p>
+      </div>
+    </div>
+  </section>
+  <hr class="hr-line">
     <section class="job-posted">
       <div class="job-details">
         <p>Jobs Posted</p>
@@ -300,7 +297,7 @@
         <h1>1596210</h1>
       </div>
     </section>
-
+<hr class="hr-line">
     <footer class="footer">
       <div>
         <div class="footer-disclaimer">
